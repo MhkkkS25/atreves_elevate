@@ -59,7 +59,7 @@ const Gallery = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="section-padding bg-muted/30">
+      <section className="section-padding bg-[#f2e7c3]">
         <div className="container-luxury">
           <div className="max-w-4xl mx-auto text-center">
             <span className="text-caption mb-4 block">Our Facilities</span>
