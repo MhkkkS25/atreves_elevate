@@ -21,21 +21,33 @@ const About = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="section-padding bg-[#f2e7c3]">
+      <section className="py-20 bg-[#f2e7c3]"> 
+        {/* reduced padding from section-padding */}
+        
         <div className="container-luxury">
-          <div className="max-w-4xl mx-auto text-center">
-            <span className="text-caption mb-4 block">Who We Are</span>
-            <h1 className="heading-display text-foreground mb-6">
+          <div className="max-w-6xl mx-auto text-center">
+            {/* increased width */}
+
+            <span className="text-caption mb-6 block text-lg tracking-widest">
+              Who We Are
+            </span>
+
+            <h1 className="heading-display text-foreground mb-8 
+                           text-5xl md:text-6xl lg:text-7xl leading-tight">
               About AtreVes Healthcare
             </h1>
-            <div className="divider-gold mx-auto mb-8" />
-            <p className="text-body text-lg">
+
+            <div className="divider-gold mx-auto mb-10" />
+
+            <p className="text-body text-xl md:text-2xl max-w-4xl mx-auto">
               A research and innovation-driven healthcare company focused on developing 
               and commercializing pharmaceutical products that make a difference.
             </p>
+
           </div>
         </div>
       </section>
+
 
       {/* Company Overview */}
       <section className="section-padding">

@@ -36,11 +36,7 @@ const Header = () => {
 
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
+    document.body.style.overflow = isMenuOpen ? 'hidden' : '';
     return () => {
       document.body.style.overflow = '';
     };
@@ -50,8 +46,15 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container-luxury">
         <div className="flex items-center justify-between h-20">
+          
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 z-50">
+            <img
+              src="/favicon.ico"
+              alt="AtreVes Healthcare Logo"
+              className="h-9 md:h-10 w-auto object-contain"
+            />
+
             <div className="flex flex-col">
               <span className="font-display text-xl md:text-2xl font-semibold text-foreground tracking-wide">
                 AtreVes
@@ -62,8 +65,12 @@ const Header = () => {
             </div>
           </Link>
 
-          {/* Desktop Navigation - visible at 1024px and above */}
-          <nav className="hidden lg:flex items-center gap-6 xl:gap-8" role="navigation" aria-label="Main navigation">
+          {/* Desktop Navigation */}
+          <nav
+            className="hidden lg:flex items-center gap-6 xl:gap-8"
+            role="navigation"
+            aria-label="Main navigation"
+          >
             {navLinks.map((link) => (
               <Link
                 key={link.path}
@@ -80,7 +87,7 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Mobile Menu Button - visible below 1024px */}
+          {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="lg:hidden p-2 text-foreground z-50 transition-colors duration-200 hover:text-primary"
@@ -93,7 +100,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation Overlay */}
+      {/* Mobile Overlay */}
       <div
         className={`lg:hidden fixed inset-0 bg-foreground/50 z-40 transition-opacity duration-300 ${
           isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
@@ -102,7 +109,7 @@ const Header = () => {
         aria-hidden="true"
       />
 
-      {/* Mobile Navigation Slide-in Menu */}
+      {/* Mobile Slide Menu */}
       <nav
         id="mobile-menu"
         className={`lg:hidden fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-background z-40 shadow-2xl transform transition-transform duration-300 ease-out ${
@@ -135,7 +142,7 @@ const Header = () => {
             ))}
           </div>
 
-          {/* Mobile Menu Footer */}
+          {/* Mobile Footer */}
           <div className="mt-auto pt-8 border-t border-border">
             <p className="text-sm text-muted-foreground">
               AtreVes Healthcare Pvt. Ltd.
