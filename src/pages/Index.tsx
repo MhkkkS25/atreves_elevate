@@ -10,7 +10,7 @@ import {
 
 import Layout from '@/components/layout/Layout';
 import heroImage from '@/assets/abstract-lab-ai.png';
-import molecularImage from '@/assets/molecular-abstract.jpg';
+import molecularImage from '@/assets/sc.png';
 
 /* =========================
    KEY CAPABILITIES DATA
@@ -51,47 +51,56 @@ const capabilities = [
 const Index = () => {
   return (
     <Layout>
-      {/* ================= HERO SECTION ================= */}
-      <section className="relative min-h-[90vh] flex items-center">
-        {/* Background */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src={heroImage}
-            alt="Abstract pharmaceutical laboratory background"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/40" />
-        </div>
+     {/* ================= HERO SECTION ================= */}
+<section className="relative min-h-[80vh] flex items-center">
+  {/* Background */}
+  <div className="absolute inset-0 z-0">
+    <img
+      src={heroImage}
+      alt="Abstract pharmaceutical laboratory background"
+      className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/40" />
+  </div>
 
-        {/* Content */}
-        <div className="container-luxury relative z-10 py-20">
-          <div className="max-w-3xl">
-            <span className="text-caption mb-6 block animate-fade-up">
-              Research & Innovation Driven Healthcare
-            </span>
+  {/* Content */}
+  <div className="container-luxury relative z-10 py-20">
+    <div className="max-w-6xl">
+      
+      <span className="text-caption text-lg tracking-widest mb-6 block animate-fade-up">
+        Research & Innovation Driven Healthcare
+      </span>
 
-            <h1 className="heading-display text-foreground mb-6 animate-fade-up animation-delay-100">
-              Innovating Advanced Pharmaceutical Formulations for Global Healthcare
-            </h1>
+      <h1
+        className="heading-display text-foreground mb-8 
+                   text-4xl md:text-5xl lg:text-6xl leading-tight
+                   animate-fade-up animation-delay-100"
+      >
+        Innovating Advanced Pharmaceutical Formulations for Global Healthcare
+      </h1>
 
-            <p className="text-body text-lg md:text-xl max-w-2xl mb-10 animate-fade-up animation-delay-200">
-              A research and innovation-driven healthcare company developing
-              differentiated pharmaceutical products using advanced formulation strategies.
-            </p>
+      <p
+        className="text-body text-xl md:text-2xl max-w-4xl mb-12
+                   animate-fade-up animation-delay-200"
+      >
+        A research and innovation-driven healthcare company developing
+        differentiated pharmaceutical products using advanced formulation strategies.
+      </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 animate-fade-up animation-delay-300">
-              <Link to="/formulations" className="btn-primary group">
-                Explore Our Capabilities
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-              </Link>
+      <div className="flex flex-col sm:flex-row gap-5 animate-fade-up animation-delay-300">
+        <Link to="/formulations" className="btn-primary group">
+          Explore Our Capabilities
+          <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+        </Link>
 
-              <Link to="/contact" className="btn-outline">
-                Partner With Us
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+        <Link to="/contact" className="btn-outline">
+          Partner With Us
+        </Link>
+      </div>
+
+    </div>
+  </div>
+</section>
   
            {/* ================= KEY CAPABILITIES ================= */}
 <section className="section-padding bg-muted/30">

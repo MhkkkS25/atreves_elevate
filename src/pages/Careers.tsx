@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Beaker, Heart, Lightbulb, Users } from 'lucide-react';
+import { ArrowRight, Beaker, Handshake, Lightbulb, Users } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
-import careersImage from '@/assets/careers-team.jpg';
+import careersImage from '@/assets/careers-team.png';
 
 const benefits = [
   {
     icon: Beaker,
     title: 'Cutting-Edge Research',
-    description: 'Work on advanced formulations, complex injectables, and novel drug delivery systems.',
+    description: 'Work on advanced formulation strategies.',
   },
   {
     icon: Lightbulb,
@@ -20,7 +20,7 @@ const benefits = [
     description: 'Work alongside experienced formulation scientists and pharmaceutical experts.',
   },
   {
-    icon: Heart,
+    icon: Handshake,
     title: 'Meaningful Impact',
     description: 'Contribute to developing treatments that improve patient outcomes worldwide.',
   },

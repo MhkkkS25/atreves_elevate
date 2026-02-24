@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { MapPin, Mail, User } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
-import globalNetwork from '@/assets/global-network.jpg';
+import globalNetwork from '@/assets/global-network.png';
 import { z } from 'zod';
 
 const contactSchema = z.object({

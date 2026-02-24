@@ -5,14 +5,14 @@ import teamImage from '@/assets/team-lab.jpg';
 const coreValues = [
   { icon: Award, title: 'Scientific Excellence', description: 'Commitment to rigorous research and innovation' },
   { icon: Lightbulb, title: 'Innovation with Purpose', description: 'Developing solutions that address real healthcare needs' },
-  { icon: Shield, title: 'Quality & Compliance', description: 'Maintaining the highest standards in pharmaceutical development' },
+  { icon: Shield, title: 'Quality & Compliance', description: 'Maintaining the highest standards in pharmaceutical business' },
   { icon: Heart, title: 'Patient-Centric Development', description: 'Focused on improving patient outcomes and quality of life' },
   { icon: Handshake, title: 'Collaborative Growth', description: 'Building partnerships that drive mutual success' },
 ];
 
 const capabilities = [
   'Advanced formulation development',
-  'Scale-up and manufacturability-focused design',
+  'Scale-up and lean manufacturing focused design',
   'Regulatory-oriented development strategies',
   'Technology transfer and partner support',
 ];
@@ -73,7 +73,7 @@ const About = () => {
                 AtreVes Healthcare is a research and innovation-driven healthcare company 
                 focused on developing and commercializing pharmaceutical products. The company 
                 specializes in novel formulations designed to improve affordability, 
-                availability, and patient outcomes for Indian and global markets.
+                availability, and patient outcomes for global markets.
               </p>
               <p className="text-body">
                 Founded by <strong className="text-foreground">Dr. Akash Chaurasiya</strong> and 
@@ -113,8 +113,7 @@ const About = () => {
                 <h3 className="heading-card text-foreground">Our Vision</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                To become a globally trusted formulation development and co-development 
-                partner in advanced drug delivery systems.
+                To become a globally trusted pharmaceutical company by improving clinical outcomes through scientific innovation.
               </p>
             </div>
           </div>
@@ -132,21 +131,51 @@ const About = () => {
             <div className="divider-gold mx-auto" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {coreValues.map((value, index) => (
-              <div
-                key={value.title}
-                className="text-center p-8 rounded-lg bg-card hover:shadow-lg transition-shadow duration-300"
-              >
-                <div className="w-16 h-16 rounded-full bg-accent flex items-center justify-center mx-auto mb-6">
-                  <value.icon className="h-8 w-8 text-primary" />
-                </div>
-                <h3 className="heading-card text-foreground mb-3">{value.title}</h3>
-                <p className="text-muted-foreground">{value.description}</p>
-              </div>
-            ))}
-          </div>
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  
+  {/* FIRST 3 CARDS */}
+  {coreValues.slice(0, 3).map((value) => (
+    <div
+      key={value.title}
+      className="text-center p-8 rounded-lg bg-card hover:shadow-lg transition-shadow duration-300"
+    >
+      <div className="w-16 h-16 rounded-full bg-accent flex items-center justify-center mx-auto mb-6">
+        <value.icon className="h-8 w-8 text-primary" />
+      </div>
+
+      <h3 className="heading-card text-foreground mb-3">
+        {value.title}
+      </h3>
+
+      <p className="text-muted-foreground">
+        {value.description}
+      </p>
+    </div>
+  ))}
+
+  {/* LAST TWO — PERFECTLY CENTERED */}
+  <div className="md:col-span-2 lg:col-span-3 flex justify-center gap-8 flex-wrap">
+    {coreValues.slice(3).map((value) => (
+      <div
+        key={value.title}
+        className="text-center p-8 rounded-lg bg-card hover:shadow-lg transition-shadow duration-300 w-full max-w-sm"
+      >
+        <div className="w-16 h-16 rounded-full bg-accent flex items-center justify-center mx-auto mb-6">
+          <value.icon className="h-8 w-8 text-primary" />
         </div>
+
+        <h3 className="heading-card text-foreground mb-3">
+          {value.title}
+        </h3>
+
+        <p className="text-muted-foreground">
+          {value.description}
+        </p>
+      </div>
+    ))}
+  </div>
+  </div>
+</div>
       </section>
 
       {/* Team & Capabilities */}

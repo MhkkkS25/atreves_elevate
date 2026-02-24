@@ -1,27 +1,27 @@
 import { Syringe, Snowflake, Atom, Pill, Droplets } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
-import molecularImage from '@/assets/molecular-abstract.jpg';
+import molecularImage from '@/assets/molecular-abstract.png';
 
 const formulations = [
   {
     icon: Syringe,
     title: 'Injectables',
-    description: 'Comprehensive injectable formulation development capabilities.',
+    description: 'Injectable formulation development capabilities.',
     features: [
       'Aqueous and non-aqueous liquid injections',
-      'Ready-to-dilute formulations',
-      'Ready-to-use injectable solutions',
+      'Ready-to-dilute injections',
+      'Ready-to-use injections',
       'Sterile manufacturing processes',
     ],
   },
   {
     icon: Snowflake,
     title: 'Lyophilized Products',
-    description: 'Advanced lyophilization for enhanced stability and efficacy.',
+    description: 'Advanced lyophilization strategies for enhanced stability and efficiency.',
     features: [
-      'Robust lyophilization processes',
-      'Long-term stability optimization',
-      'High efficiency formulations',
+      'Robust lyophilization process',
+      'Time-efficient lyophilization cycles',
+      'Enhanced product stability',
       'Advanced formulation strategies',
     ],
   },
@@ -33,18 +33,18 @@ const formulations = [
       'Long-acting injectables (1–4 weeks delivery)',
       'Liposomal injections',
       'Injectable lipid emulsions',
-      'Nanotechnology-driven systems',
+      'Nanotechnology-driven formulations',
     ],
   },
   {
     icon: Pill,
     title: 'Oral Products',
-    description: 'Enhanced bioavailability oral formulations.',
+    description: 'Oral formulations with enhanced bioavailability.',
     features: [
       'Highly solubilized drug formulations',
       'Preconcentrate solutions',
-      'Patentable solubility techniques',
-      'Multiple dosage forms: tablets, capsules, dry powders',
+      'Patented solubility enhancement techniques',
+      'Peptides for oral delivery',
     ],
   },
   {
@@ -52,10 +52,21 @@ const formulations = [
     title: 'Topical / Transdermal',
     description: 'Nanotechnology-based topical delivery systems.',
     features: [
-      'Nanotechnology drug delivery approaches',
-      'Enhanced safety profiles',
-      'Improved efficacy through optimized particle size',
-      'Transdermal delivery systems',
+      'Enhanced permeability',
+      'Better safety profile',
+      'Improved efficacy',
+      'Patient Compliance',
+    ],
+  },
+    {
+    icon: Pill,
+    title: 'Others',
+    description: 'Application of advanced formulation strategies for better patient compliance',
+    features: [
+      'Healthcare Supplements',
+      'Dietary Supplements',
+      'Phytopharmaceuticals',
+      'Nanotechnology based supplementary products',
     ],
   },
 ];
@@ -131,8 +142,7 @@ const Formulations = () => {
                 targeted delivery, and improved patient outcomes.
               </p>
               <p className="text-body">
-                From liposomal injections to nanoparticle-based topical formulations, 
-                we leverage advanced technologies to solve complex formulation challenges 
+                From complex injectables to nanotechnology based topical formulations, we leverage advanced technologies to solve formulation challenges 
                 and create differentiated pharmaceutical products.
               </p>
             </div>

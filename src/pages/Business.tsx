@@ -7,21 +7,21 @@ const businessAreas = [
   {
     icon: Beaker,
     title: 'Product Development',
-    description: 'Development of specialty pharmaceutical products with a focus on 505(b)(2) approaches.',
+    description: 'Development of specialty pharmaceutical products with a focus on 505(b)(2) approaches and their out-licensing.',
     features: [
-      'RTU liquid injections',
-      'Lipid emulsions',
-      'Ready-to-outlicense differentiated products',
-      '505(b)(2) regulatory strategies',
+      'Long acting Injectables',
+      'Ready to use/lyophilized injections',
+      'Oral Products',
+      'High value differentiated products',
     ],
   },
   {
     icon: Users,
     title: 'Co-Development',
-    description: 'Joint development partnerships based on project agreements for mutual success.',
+    description: 'Joint development partnership for mutual success.',
     features: [
       'Project-based agreements',
-      'High-value differentiated formulations',
+      'Leveraging synergistic opportunities',
       'Collaborative development approach',
       'Shared marketing opportunities',
     ],
@@ -29,9 +29,9 @@ const businessAreas = [
   {
     icon: Settings,
     title: 'Development Support',
-    description: 'Comprehensive contract services for pharmaceutical development needs.',
+    description: 'Comprehensive contractual research services for product development needs.',
     features: [
-      'Contract development services',
+      'Contract development (CRO services)',
       'Interim product development',
       'Technical consultancy',
       'Technology transfer support',
@@ -100,9 +100,7 @@ const Business = () => {
                 while addressing unmet medical needs.
               </p>
               <p className="text-body mb-8">
-                Our development approach focuses on manufacturability, scalability, and 
-                regulatory compliance from the earliest stages, ensuring successful 
-                product commercialization.
+              Our development approach focuses on lean manufacturing, scalability and regulatory compliance from early stage, ensuring successful product commercialization.
               </p>
               <Link
                 to="/contact"
