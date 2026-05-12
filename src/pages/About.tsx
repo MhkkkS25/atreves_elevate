@@ -1,6 +1,7 @@
 import { Target, Eye, Heart, Users, Award, Lightbulb, Shield, Handshake } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
-import teamImage from '@/assets/team-lab.jpg';
+import teamImage from '@/assets/team-lab.jpeg';
+
 
 const coreValues = [
   { icon: Award, title: 'Scientific Excellence', description: 'Commitment to rigorous research and innovation' },
@@ -117,6 +118,97 @@ const About = () => {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Leadership Section */}
+      <section className="section-padding bg-white">
+        <div className="container-luxury space-y-20">
+
+          {/* First Leader */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            {/* Image */}
+            <div className="order-1 lg:order-1">
+              <div className="rounded-xl overflow-hidden shadow-lg max-w-md mx-auto">
+                <img
+                  src="/leaders/leader1.jpeg"
+                  alt="Leader 1"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Content */}
+            <div className="order-2 lg:order-2">
+              <h3 className="text-3xl font-semibold text-foreground mb-6">
+                Dr. Akash Chaurasiya
+              </h3>
+
+              <div className="space-y-5 text-muted-foreground leading-relaxed">
+                <p>
+                  Dr. Akash Chaurasiya is a seasoned pharmaceutical veteran with more than 
+                  10 years of experience in product development, regulatory 
+                  affairs, and strategic pharmaceutical business growth.
+                </p>
+
+                <p>
+                  He has worked extensively in formulation research, 
+                  commercialization strategies, and international market expansion 
+                  across multiple therapeutic segments.
+                </p>
+
+                <p>
+                  His expertise includes complex injectables, oral dosage forms, 
+                  process optimization, and technology transfer for regulated markets.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Divider */}
+          <div className="border-t border-border"></div>
+
+          {/* Second Leader */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+            {/* Content */}
+            <div className="order-2 lg:order-1">
+              <h3 className="text-3xl font-semibold text-foreground mb-6">
+                Ms. Kanan Panchal
+              </h3>
+
+              <div className="space-y-5 text-muted-foreground leading-relaxed">
+                <p>
+                  Ms. Kanan Panchal brings extensive experience in pharmaceutical 
+                  formulation development and research-driven healthcare innovation.
+                </p>
+
+                <p>
+                  Her background includes leading product development initiatives, 
+                  regulatory-focused formulation design, and commercialization support.
+                </p>
+
+                <p>
+                  She has contributed to multiple innovative pharmaceutical projects 
+                  with expertise spanning oral solid dosage forms and advanced 
+                  drug delivery technologies.
+                </p>
+              </div>
+            </div>
+
+            {/* Image */}
+            <div className="order-1 lg:order-2">
+              <div className="rounded-xl overflow-hidden shadow-lg max-w-md mx-auto">
+                <img
+                  src="/leaders/leader2.JPEG"
+                  alt="Leader 2"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 

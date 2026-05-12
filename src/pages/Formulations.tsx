@@ -1,6 +1,6 @@
 import { Syringe, Snowflake, Atom, Pill, Droplets } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
-import molecularImage from '@/assets/molecular-abstract.png';
+import molecularImage from '@/assets/molecular-abstract.jpeg';
 
 const formulations = [
   {

@@ -10,7 +10,7 @@ import {
 
 import Layout from '@/components/layout/Layout';
 import heroImage from '@/assets/abstract-lab-ai.png';
-import molecularImage from '@/assets/sc.png';
+import molecularImage from '@/assets/sc2.png';
 
 /* =========================
    KEY CAPABILITIES DATA

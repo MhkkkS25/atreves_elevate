@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Beaker, Users, Settings } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
-import labEquipment from '@/assets/lab-equipment.jpg';
+import labEquipment from '@/assets/lab-equipment.png';
 
 const businessAreas = [
   {
