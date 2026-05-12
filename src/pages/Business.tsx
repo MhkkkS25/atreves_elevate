@@ -59,30 +59,7 @@ const Business = () => {
         </div>
       </section>
 
-      {/* Business Areas */}
-      <section className="section-padding">
-        <div className="container-luxury">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {businessAreas.map((area) => (
-              <div key={area.title} className="card-luxury flex flex-col h-full">
-                <div className="w-14 h-14 rounded-full bg-accent flex items-center justify-center mb-6">
-                  <area.icon className="h-7 w-7 text-primary" />
-                </div>
-                <h3 className="heading-card text-foreground mb-4">{area.title}</h3>
-                <p className="text-muted-foreground mb-6">{area.description}</p>
-                <ul className="space-y-3 mt-auto">
-                  {area.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-3 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Featured Image Section */}
       <section className="section-padding bg-muted/30">
@@ -120,6 +97,31 @@ const Business = () => {
               </div>
               <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/10 rounded-lg -z-10" />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Business Areas */}
+      <section className="section-padding">
+        <div className="container-luxury">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {businessAreas.map((area) => (
+              <div key={area.title} className="card-luxury flex flex-col h-full">
+                <div className="w-14 h-14 rounded-full bg-accent flex items-center justify-center mb-6">
+                  <area.icon className="h-7 w-7 text-primary" />
+                </div>
+                <h3 className="heading-card text-foreground mb-4">{area.title}</h3>
+                <p className="text-muted-foreground mb-6">{area.description}</p>
+                <ul className="space-y-3 mt-auto">
+                  {area.features.map((feature) => (
+                    <li key={feature} className="flex items-start gap-3 text-sm text-muted-foreground">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </section>
