@@ -101,52 +101,8 @@ const Index = () => {
     </div>
   </div>
 </section>
-  
-           {/* ================= KEY CAPABILITIES ================= */}
-<section className="section-padding bg-muted/30">
-  <div className="container-luxury">
-    <div className="text-center max-w-3xl mx-auto mb-16">
-      <span className="text-caption mb-4 block">Our Expertise</span>
-      <h2 className="heading-section text-foreground mb-6">
-        Key Capability Highlights
-      </h2>
-      <div className="divider-gold mx-auto" />
-    </div>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      {capabilities.map((capability, index) => {
-        const isLast = index === capabilities.length - 1;
-
-        return (
-          <div
-            key={capability.title}
-            className={`card-luxury group ${
-              isLast ? 'md:col-span-2 md:max-w-[620px] md:mx-auto' : ''
-            }`}
-            style={{ animationDelay: `${index * 100}ms` }}
-          >
-            <div className="flex items-start gap-5">
-              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-accent flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
-                <capability.icon className="h-7 w-7 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
-              </div>
-
-              <div>
-                <h3 className="heading-card text-foreground mb-3">
-                  {capability.title}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  {capability.description}
-                </p>
-              </div>
-            </div>
-          </div>
-        );
-      })}
-    </div>
-  </div>
-</section>
-
-      {/* ================= INNOVATION SECTION ================= */}
+{/* ================= INNOVATION SECTION ================= */}
       <section className="section-padding">
         <div className="container-luxury">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -194,6 +150,52 @@ const Index = () => {
           </div>
         </div>
       </section>
+  
+           {/* ================= KEY CAPABILITIES ================= */}
+<section className="section-padding bg-muted/30">
+  <div className="container-luxury">
+    <div className="text-center max-w-3xl mx-auto mb-16">
+      <span className="text-caption mb-4 block">Our Expertise</span>
+      <h2 className="heading-section text-foreground mb-6">
+        Key Capability Highlights
+      </h2>
+      <div className="divider-gold mx-auto" />
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {capabilities.map((capability, index) => {
+        const isLast = index === capabilities.length - 1;
+
+        return (
+          <div
+            key={capability.title}
+            className={`card-luxury group ${
+              isLast ? 'md:col-span-2 md:max-w-[620px] md:mx-auto' : ''
+            }`}
+            style={{ animationDelay: `${index * 100}ms` }}
+          >
+            <div className="flex items-start gap-5">
+              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-accent flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
+                <capability.icon className="h-7 w-7 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
+              </div>
+
+              <div>
+                <h3 className="heading-card text-foreground mb-3">
+                  {capability.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {capability.description}
+                </p>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</section>
+
+      
 
       {/* ================= CTA SECTION ================= */}
       <section className="section-padding bg-secondary">

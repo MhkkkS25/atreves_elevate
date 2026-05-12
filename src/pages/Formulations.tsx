@@ -90,33 +90,7 @@ const Formulations = () => {
           </div>
         </div>
       </section>
-
-      {/* Formulations Grid */}
-      <section className="section-padding">
-        <div className="container-luxury">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {formulations.map((formulation) => (
-              <div key={formulation.title} className="card-luxury flex flex-col h-full group">
-                <div className="w-16 h-16 rounded-full bg-accent flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
-                  <formulation.icon className="h-8 w-8 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
-                </div>
-                <h3 className="heading-card text-foreground mb-3">{formulation.title}</h3>
-                <p className="text-muted-foreground mb-6">{formulation.description}</p>
-                <ul className="space-y-3 mt-auto">
-                  {formulation.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-3 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Technology Highlight */}
+{/* Technology Highlight */}
       <section className="section-padding bg-muted/30">
         <div className="container-luxury">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -149,7 +123,33 @@ const Formulations = () => {
           </div>
         </div>
       </section>
-    </Layout>
+
+      {/* Formulations Grid */}
+      <section className="section-padding">
+        <div className="container-luxury">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {formulations.map((formulation) => (
+              <div key={formulation.title} className="card-luxury flex flex-col h-full group">
+                <div className="w-16 h-16 rounded-full bg-accent flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+                  <formulation.icon className="h-8 w-8 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
+                </div>
+                <h3 className="heading-card text-foreground mb-3">{formulation.title}</h3>
+                <p className="text-muted-foreground mb-6">{formulation.description}</p>
+                <ul className="space-y-3 mt-auto">
+                  {formulation.features.map((feature) => (
+                    <li key={feature} className="flex items-start gap-3 text-sm text-muted-foreground">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+          </Layout>
   );
 };
 
