@@ -205,10 +205,9 @@ const Index = () => {
           </h2>
 
           <p className="text-secondary-foreground/80 text-lg max-w-2xl mx-auto mb-10">
-            Explore opportunities in partnering for pharmaceutical development,
-            co-development, technology transfer and other technical services.
-          </p>
-
+  Explore opportunities in partnering for pharmaceutical development,
+  <span className="whitespace-nowrap"> co-development</span>, technology transfer and other technical services.
+</p>
           <Link
             to="/contact"
             className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground font-medium rounded-sm hover:bg-gold-dark transition-colors duration-300 group"
