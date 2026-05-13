@@ -142,26 +142,15 @@ const About = () => {
             {/* Content */}
             <div className="order-2 lg:order-2">
               <h3 className="text-3xl font-semibold text-foreground mb-6">
-                Dr. Akash Chaurasiya
+                Dr. Akash Chaurasiya (Co-Founder & Director)
               </h3>
 
               <div className="space-y-5 text-muted-foreground leading-relaxed">
                 <p>
-                  Dr. Akash Chaurasiya is a seasoned pharmaceutical veteran with more than 
-                  10 years of experience in product development, regulatory 
-                  affairs, and strategic pharmaceutical business growth.
+               Dr. Akash Chaurasiya is an experienced researcher with work experience in R&D of various pharmaceutical companies like Dabur Research Foundation, Fresenius Kabi, Dr. Reddy’s Laboratories & Amneal Pharmaceuticals. During this tenure, he primarily worked on formulation development of complex products, i.e., liposomes, nano-suspensions, lyophilized products, etc., for regulated markets like US, EU, etc.
                 </p>
-
-                <p>
-                  He has worked extensively in formulation research, 
-                  commercialization strategies, and international market expansion 
-                  across multiple therapeutic segments.
-                </p>
-
-                <p>
-                  His expertise includes complex injectables, oral dosage forms, 
-                  process optimization, and technology transfer for regulated markets.
-                </p>
+              Dr. Chaurasiya has played a pivotal role in developing, scaling up, and regulatory filing of these complex products and acted as co-inventor in several patents/applications. Dr. Chaurasiya also received the “Best Excellence and Innovation Award” and “Spot Recognition Award” during his tenure in Dr. Reddy’s lab. Moreover, Dr. Chaurasiya is part of various patents, research articles, book chapters, and national/international conference proceedings. Presently, Dr. Chaurasiya is working as an Associate Professor in the Department of Pharmacy, BITS Pilani Hyderabad Campus.
+              
               </div>
             </div>
           </div>
@@ -175,24 +164,16 @@ const About = () => {
             {/* Content */}
             <div className="order-2 lg:order-1">
               <h3 className="text-3xl font-semibold text-foreground mb-6">
-                Ms. Kanan Panchal
+                Ms. Kanan Panchal (Co-Founder & Director)
               </h3>
 
               <div className="space-y-5 text-muted-foreground leading-relaxed">
                 <p>
-                  Ms. Kanan Panchal brings extensive experience in pharmaceutical 
-                  formulation development and research-driven healthcare innovation.
+                  Ms. Kanan Panchal is a young formulation scientist with experience in developing complex healthcare products for enhancing the treatment modalities of different diseases. Securing a gold medal during her masters from BITS Pilani, she took a vertical transfer into the Ph.D. program. During this tenure, she has been involved in the development of various pharmaceutical formulations and shared co-inventorship in multiple patents. 
                 </p>
 
                 <p>
-                  Her background includes leading product development initiatives, 
-                  regulatory-focused formulation design, and commercialization support.
-                </p>
-
-                <p>
-                  She has contributed to multiple innovative pharmaceutical projects 
-                  with expertise spanning oral solid dosage forms and advanced 
-                  drug delivery technologies.
+                 Additionally, Ms. Panchal has authored/coauthored various publications, including research/review articles and book chapters. She has also presented her research work in various national and international forums and has also been awarded for the same. Besides the academic and entrepreneurial facets, she is a trained Kathak & Folk dancer with a distinctive interest in varying art forms.
                 </p>
               </div>
             </div>
@@ -201,7 +182,7 @@ const About = () => {
             <div className="order-1 lg:order-2">
               <div className="rounded-xl overflow-hidden shadow-lg max-w-md mx-auto">
                 <img
-                  src="/leaders/leader2.JPEG"
+                  src="/leaders/leader2.jpg"
                   alt="Leader 2"
                   className="w-full h-full object-cover"
                 />
