@@ -1,6 +1,6 @@
 import { Target, Eye, Heart, Users, Award, Lightbulb, Shield, Handshake } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
-import teamImage from '@/assets/team-lab.jpeg';
+import teamImage from '@/assets/teamlab.jpeg';
 
 
 const coreValues = [
