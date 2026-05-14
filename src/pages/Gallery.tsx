@@ -21,52 +21,141 @@ const galleryData = [
   {
     album: 'Achievements',
     images: [
-      { imageNo: 4 },
-      { imageNo: 22 },
-      { imageNo: 25 },
+      {
+        imageNo: 6,
+        title:
+          'Travel Grant received by Ms. Kanan Panchal @ Peptide Complex Generic Symposium 2024',
+      },
+      {
+        imageNo: 9,
+        title:
+          'Award received by AtreVes Healthcare Pvt. Ltd. @ IKMC 2025',
+      },
+      {
+        imageNo: 28,
+        title:
+          'Amit Sharma Memorial Award received by Ms. Kanan Panchal @ PDA India Chapter, Annual Meeting 2025',
+      },
     ],
   },
 
   {
     album: 'Events',
     images: [
-      { imageNo: 1 },
-      { imageNo: 2 },
-      { imageNo: 3 },
-      { imageNo: 5 },
-      { imageNo: 6 },
-      { imageNo: 8 },
-      { imageNo: 14 },
-      { imageNo: 20 },
-      { imageNo: 21 },
-      { imageNo: 23 },
-      { imageNo: 24 },
-      { imageNo: 26 },
-      { imageNo: 27 },
+      {
+        imageNo: 1,
+        title: 'IKMC 2025',
+      },
+      {
+        imageNo: 2,
+        title: 'Global BioIndia 2024',
+      },
+      {
+        imageNo: 3,
+        title: 'BioAsia 2024',
+      },
+      {
+        imageNo: 4,
+        title: 'PDA India Chapter, Annual Meeting 2025',
+      },
+      {
+        imageNo: 5,
+        title: 'Peptide Complex Generic Symposium 2025',
+      },
+      {
+        imageNo: 7,
+        title: 'Peptide Complex Generic Symposium 2025',
+      },
+      {
+        imageNo: 8,
+        title: 'IKMC 2025',
+      },
+      {
+        imageNo: 10,
+        title:
+          'Talk by Ms. Kanan Panchal @ YEB 2025',
+      },
+      {
+        imageNo: 11,
+        title:
+          'Talk by Ms. Kanan Panchal @ YEB 2025',
+      },
+      {
+        imageNo: 12,
+        title:
+          'PDA India Chapter, Annual Meeting 2025',
+      },
+      {
+        imageNo: 13,
+        title:
+          'Talk on Lyophilization by Ms. Kanan Panchal @ National Conference of Lyophilization, Parul University',
+      },
+      {
+        imageNo: 15,
+        title: 'Team AtreVes',
+      },
+      {
+        imageNo: 26,
+        title: 'Global BioIndia 2024',
+      },
+      {
+        imageNo: 27,
+        title: 'IKMC 2025',
+      },
     ],
   },
+
+  
 
   {
     album: 'Infrastructure & Capabilities',
     images: [
-      { imageNo: 7 },
-      { imageNo: 9 },
-      { imageNo: 10 },
-      { imageNo: 11 },
-      { imageNo: 15 },
-      { imageNo: 16 },
-      { imageNo: 18 },
+      {
+        imageNo: 14,
+        title: 'Rotary Evaporator',
+      },
+      {
+        imageNo: 16,
+        title: 'Rotary Evaporator',
+      },
+      {
+        imageNo: 17,
+        title: 'Formulation Processing',
+      },
+      {
+        imageNo: 18,
+        title: 'Lyophilizer',
+      },
+      {
+        imageNo: 20,
+        title: 'Formulation Processing',
+      },
+      {
+        imageNo: 21,
+        title: 'Stability Chamber',
+      },
+      {
+        imageNo: 22,
+        title: 'Weighing Balance',
+      },
+      {
+        imageNo: 24,
+        title: 'Stability Chamber',
+      },
     ],
   },
 ];
 
 const Gallery = () => {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedImage, setSelectedImage] =
+    useState<string | null>(null);
 
   const [activeAlbum, setActiveAlbum] =
     useState('Achievements');
 
-  const albums = galleryData.map((item) => item.album);
+  const albums = galleryData.map(
+    (item) => item.album
+  );
 
   const currentImages = useMemo(() => {
     const selectedAlbum = galleryData.find(
@@ -77,19 +166,28 @@ const Gallery = () => {
 
     return selectedAlbum.images
       .map((img) => {
-        const matchedImage = imageList.find((image) => {
-          return (
-            image.fileName?.startsWith(`${img.imageNo}.`) ||
-            image.fileName?.startsWith(`${img.imageNo}_`) ||
-            image.fileName?.startsWith(`${img.imageNo}-`)
-          );
-        });
+        const matchedImage = imageList.find(
+          (image) => {
+            return (
+              image.fileName?.startsWith(
+                `${img.imageNo}.`
+              ) ||
+              image.fileName?.startsWith(
+                `${img.imageNo}_`
+              ) ||
+              image.fileName?.startsWith(
+                `${img.imageNo}-`
+              )
+            );
+          }
+        );
 
         if (!matchedImage) return null;
 
         return {
           src: matchedImage.src,
           category: selectedAlbum.album,
+          title: img.title,
         };
       })
       .filter(Boolean);
@@ -116,9 +214,9 @@ const Gallery = () => {
             <div className="divider-gold mx-auto mb-8" />
 
             <p className="text-body text-lg">
-              Explore our facilities, equipment,
-              and the dedicated team behind
-              AtreVes Healthcare.
+              Explore our facilities,
+              equipment, and the dedicated
+              team behind AtreVes Healthcare.
             </p>
 
           </div>
@@ -135,9 +233,12 @@ const Gallery = () => {
           <div className="flex flex-wrap justify-center gap-4">
 
             {albums.map((album) => (
+
               <button
                 key={album}
-                onClick={() => setActiveAlbum(album)}
+                onClick={() =>
+                  setActiveAlbum(album)
+                }
                 className={`px-6 py-3 rounded-full border transition-all duration-300 text-sm font-medium
                   ${
                     activeAlbum === album
@@ -148,6 +249,7 @@ const Gallery = () => {
               >
                 {album}
               </button>
+
             ))}
 
           </div>
@@ -171,31 +273,46 @@ const Gallery = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-              {currentImages.map((image: any, index) => (
+              {currentImages.map(
+                (image: any, index) => (
 
-                <div
-                  key={index}
-                  className="group relative overflow-hidden rounded-xl cursor-pointer shadow-md"
-                  onClick={() => setSelectedImage(image.src)}
-                >
+                  <div
+                    key={index}
+                    className="group relative overflow-hidden rounded-xl cursor-pointer shadow-md bg-white"
+                    onClick={() =>
+                      setSelectedImage(
+                        image.src
+                      )
+                    }
+                  >
 
-                  {/* Image */}
-                  <div className="aspect-[4/3] overflow-hidden bg-muted">
+                    {/* Image */}
+                    <div className="aspect-[4/3] overflow-hidden bg-muted">
 
-                    <img
-                      src={image.src}
-                      alt="Gallery"
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
+                      <img
+                        src={image.src}
+                        alt={image.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+
+                    </div>
+
+                    {/* Overlay */}
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300" />
+
+                    {/* Title */}
+                    <div className="p-3 bg-white">
+
+                      <p className="text-sm font-medium text-center">
+                        {image.title}
+                      </p>
+
+                    </div>
 
                   </div>
 
-                  {/* Overlay */}
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300" />
-
-                </div>
-
-              ))}
+                )
+              )}
 
             </div>
 
@@ -210,13 +327,17 @@ const Gallery = () => {
 
         <div
           className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
-          onClick={() => setSelectedImage(null)}
+          onClick={() =>
+            setSelectedImage(null)
+          }
         >
 
           {/* Close Button */}
           <button
             className="absolute top-6 right-6 text-white hover:text-yellow-300 transition-colors"
-            onClick={() => setSelectedImage(null)}
+            onClick={() =>
+              setSelectedImage(null)
+            }
           >
             <X size={32} />
           </button>
@@ -226,7 +347,9 @@ const Gallery = () => {
             src={selectedImage}
             alt="Gallery"
             className="max-w-full max-h-[90vh] object-contain rounded-lg"
-            onClick={(e) => e.stopPropagation()}
+            onClick={(e) =>
+              e.stopPropagation()
+            }
           />
 
         </div>
