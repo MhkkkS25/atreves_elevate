@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import logo from '@/assets/logo-transparent.png';
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -50,7 +51,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 z-50">
             <img
-              src="/favicon.ico"
+  src={logo}
               alt="AtreVes Healthcare Logo"
               className="h-9 md:h-10 w-auto object-contain"
             />
