@@ -22,11 +22,6 @@ const galleryData = [
     album: 'Achievements',
     images: [
       {
-        imageNo: 6,
-        title:
-          'Travel Grant received by Ms. Kanan Panchal @ Peptide Complex Generic Symposium 2024',
-      },
-      {
         imageNo: 9,
         title:
           'Award received by AtreVes Healthcare Pvt. Ltd. @ IKMC 2025',
@@ -36,6 +31,13 @@ const galleryData = [
         title:
           'Amit Sharma Memorial Award received by Ms. Kanan Panchal @ PDA India Chapter, Annual Meeting 2025',
       },
+      {
+        imageNo: 6,
+        title:
+          'Travel Grant received by Ms. Kanan Panchal @ Peptide Complex Generic Symposium 2025',
+      },
+      
+      
     ],
   },
 

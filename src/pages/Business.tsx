@@ -87,16 +87,21 @@ const Business = () => {
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
-            <div className="relative">
-              <div className="aspect-[4/3] rounded-lg overflow-hidden">
-                <img
-                  src={labEquipment}
-                  alt="Pharmaceutical manufacturing equipment"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/10 rounded-lg -z-10" />
-            </div>
+            <div className="relative w-full">
+
+  <div className="rounded-2xl h-[500px] flex items-center justify-center">
+
+    <img
+  src={labEquipment}
+  alt="Pharmaceutical manufacturing equipment"
+  className="max-h-[90%] max-w-[85%] object-contain rounded-xl transition-transform duration-300 hover:scale-[1.02]"
+/>
+
+  </div>
+
+  <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/10 rounded-2xl -z-10" />
+
+</div>
           </div>
         </div>
       </section>
@@ -105,24 +110,48 @@ const Business = () => {
       <section className="section-padding">
         <div className="container-luxury">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {businessAreas.map((area) => (
-              <div key={area.title} className="card-luxury flex flex-col h-full">
-                <div className="w-14 h-14 rounded-full bg-accent flex items-center justify-center mb-6">
-                  <area.icon className="h-7 w-7 text-primary" />
-                </div>
-                <h3 className="heading-card text-foreground mb-4">{area.title}</h3>
-                <p className="text-muted-foreground mb-6">{area.description}</p>
-                <ul className="space-y-3 mt-auto">
-                  {area.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-3 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+  {businessAreas.map((area) => (
+    
+    <div
+      key={area.title}
+      className="card-luxury group flex flex-col h-full hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+    >
+
+      {/* Icon */}
+      <div className="w-14 h-14 rounded-full bg-accent flex items-center justify-center mb-6 transition-all duration-300 group-hover:bg-primary">
+        <area.icon className="h-7 w-7 text-primary transition-colors duration-300 group-hover:text-white" />
+      </div>
+
+      {/* Title */}
+      <h3 className="heading-card text-foreground mb-4">
+        {area.title}
+      </h3>
+
+      {/* Description */}
+      <p className="text-muted-foreground mb-6">
+        {area.description}
+      </p>
+
+      {/* Features */}
+      <ul className="space-y-3 mt-auto">
+        {area.features.map((feature) => (
+          
+          <li
+            key={feature}
+            className="flex items-start gap-3 text-sm text-muted-foreground"
+          >
+            <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0 transition-colors duration-300 group-hover:bg-gold" />
+            
+            {feature}
+          </li>
+
+        ))}
+      </ul>
+
+    </div>
+
+  ))}
+</div>
         </div>
       </section>
 

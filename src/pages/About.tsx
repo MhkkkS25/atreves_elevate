@@ -80,47 +80,64 @@ const About = () => {
                 Founded by <strong className="text-foreground">Dr. Akash Chaurasiya</strong> and 
                 <strong className="text-foreground"> Ms. Kanan Panchal</strong>, AtreVes aims to 
                 strengthen healthcare systems through scientific excellence and innovative 
-                drug delivery solutions.
+                drug delivery solutions. AtreVes Healthcare is the recipient of the 23rd BIG/BIRAC Grant for innovative solution in drug category.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Mission & Vision */}
-      <section className="section-padding bg-muted/30">
-        <div className="container-luxury">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {/* Mission */}
-            <div className="card-luxury">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 rounded-full bg-accent flex items-center justify-center">
-                  <Target className="h-7 w-7 text-primary" />
-                </div>
-                <h3 className="heading-card text-foreground">Our Mission</h3>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                To develop innovative, high-value pharmaceutical formulations that address 
-                unmet medical needs and improve quality of life for patients worldwide.
-              </p>
-            </div>
+     {/* Mission & Vision */}
+<section className="section-padding bg-muted/30">
+  <div className="container-luxury">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
 
-            {/* Vision */}
-            <div className="card-luxury">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 rounded-full bg-accent flex items-center justify-center">
-                  <Eye className="h-7 w-7 text-primary" />
-                </div>
-                <h3 className="heading-card text-foreground">Our Vision</h3>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                To become a globally trusted pharmaceutical company by improving clinical outcomes through scientific innovation.
-              </p>
-            </div>
+      {/* Mission */}
+      <div className="card-luxury group hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+        
+        <div className="flex items-center gap-4 mb-6">
+
+          <div className="w-14 h-14 rounded-full bg-accent flex items-center justify-center transition-all duration-300 group-hover:bg-primary">
+            <Target className="h-7 w-7 text-primary transition-colors duration-300 group-hover:text-white" />
           </div>
-        </div>
-      </section>
 
+          <h3 className="heading-card text-foreground">
+            Our Mission
+          </h3>
+
+        </div>
+
+        <p className="text-muted-foreground leading-relaxed">
+          To develop innovative, high-value pharmaceutical formulations that address 
+          unmet medical needs and improve quality of life for patients worldwide.
+        </p>
+
+      </div>
+
+      {/* Vision */}
+      <div className="card-luxury group hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+        
+        <div className="flex items-center gap-4 mb-6">
+
+          <div className="w-14 h-14 rounded-full bg-accent flex items-center justify-center transition-all duration-300 group-hover:bg-primary">
+            <Eye className="h-7 w-7 text-primary transition-colors duration-300 group-hover:text-white" />
+          </div>
+
+          <h3 className="heading-card text-foreground">
+            Our Vision
+          </h3>
+
+        </div>
+
+        <p className="text-muted-foreground leading-relaxed">
+          To become a globally trusted pharmaceutical company by improving clinical outcomes through scientific innovation.
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+</section>
       {/* Leadership Section */}
       <section className="section-padding bg-white">
         <div className="container-luxury space-y-20">
@@ -149,8 +166,10 @@ const About = () => {
                 <p>
                Dr. Akash Chaurasiya is an experienced researcher with work experience in R&D of various pharmaceutical companies like Dabur Research Foundation, Fresenius Kabi, Dr. Reddy’s Laboratories & Amneal Pharmaceuticals. During this tenure, he primarily worked on formulation development of complex products, i.e., liposomes, nano-suspensions, lyophilized products, etc., for regulated markets like US, EU, etc.
                 </p>
+                
+                <p>
               Dr. Chaurasiya has played a pivotal role in developing, scaling up, and regulatory filing of these complex products and acted as co-inventor in several patents/applications. Dr. Chaurasiya also received the “Best Excellence and Innovation Award” and “Spot Recognition Award” during his tenure in Dr. Reddy’s lab. Moreover, Dr. Chaurasiya is part of various patents, research articles, book chapters, and national/international conference proceedings. Presently, Dr. Chaurasiya is working as an Associate Professor in the Department of Pharmacy, BITS Pilani Hyderabad Campus.
-              
+              </p>
               </div>
             </div>
           </div>

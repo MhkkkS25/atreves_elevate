@@ -102,7 +102,7 @@ const Header = () => {
 
       {/* Mobile Overlay */}
       <div
-        className={`lg:hidden fixed inset-0 bg-foreground/50 z-40 transition-opacity duration-300 ${
+        className={`lg:hidden fixed inset-0 bg-foreground/50 z-50 transition-opacity duration-300 ${
           isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
         onClick={() => setIsMenuOpen(false)}
@@ -110,49 +110,59 @@ const Header = () => {
       />
 
       {/* Mobile Slide Menu */}
-      <nav
-        id="mobile-menu"
-        className={`lg:hidden fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-background z-40 shadow-2xl transform transition-transform duration-300 ease-out ${
-          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
-        role="navigation"
-        aria-label="Mobile navigation"
-      >
-        <div className="flex flex-col h-full pt-24 pb-8 px-6">
-          <div className="flex flex-col gap-2">
-            {navLinks.map((link, index) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                onClick={() => setIsMenuOpen(false)}
-                className={`text-lg font-medium py-3 px-4 rounded-md transition-all duration-200 ${
-                  isActive(link.path)
-                    ? 'text-primary bg-accent'
-                    : 'text-foreground hover:text-primary hover:bg-accent/50'
-                }`}
-                style={{
-                  transitionDelay: isMenuOpen ? `${index * 50}ms` : '0ms',
-                  opacity: isMenuOpen ? 1 : 0,
-                  transform: isMenuOpen ? 'translateX(0)' : 'translateX(20px)',
-                }}
-                aria-current={isActive(link.path) ? 'page' : undefined}
-              >
-                {link.name}
-              </Link>
-            ))}
-          </div>
+<nav
+  id="mobile-menu"
+  className={`lg:hidden fixed top-0 right-0 h-full w-80 max-w-[85vw]
+  bg-white border-l border-border shadow-[0_0_40px_rgba(0,0,0,0.15)]
+  z-[60] transform transition-transform duration-300 ease-out ${
+    isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+  }`}
+  role="navigation"
+  aria-label="Mobile navigation"
+>
+  <div className="flex flex-col h-full pt-24 pb-8 px-6 bg-white">
 
-          {/* Mobile Footer */}
-          <div className="mt-auto pt-8 border-t border-border">
-            <p className="text-sm text-muted-foreground">
-              AtreVes Healthcare Pvt. Ltd.
-            </p>
-            <p className="text-xs text-muted-foreground/70 mt-1">
-              Innovating Pharmaceutical Formulations
-            </p>
-          </div>
-        </div>
-      </nav>
+    {/* Links */}
+    <div className="flex flex-col gap-2">
+      {navLinks.map((link, index) => (
+        <Link
+          key={link.path}
+          to={link.path}
+          onClick={() => setIsMenuOpen(false)}
+          className={`text-lg font-medium py-3 px-4 rounded-lg transition-all duration-300 ${
+            isActive(link.path)
+              ? 'text-primary bg-accent'
+              : 'text-foreground hover:text-primary hover:bg-accent/50'
+          }`}
+          style={{
+            transitionDelay: isMenuOpen ? `${index * 50}ms` : '0ms',
+            opacity: isMenuOpen ? 1 : 0,
+            transform: isMenuOpen
+              ? 'translateX(0)'
+              : 'translateX(20px)',
+          }}
+          aria-current={isActive(link.path) ? 'page' : undefined}
+        >
+          {link.name}
+        </Link>
+      ))}
+    </div>
+
+    {/* Footer */}
+    <div className="mt-auto pt-8 border-t border-border">
+      <p className="text-sm text-muted-foreground">
+        AtreVes Healthcare Pvt. Ltd.
+      </p>
+
+      <p className="text-xs text-muted-foreground/70 mt-1">
+        Innovating Pharmaceutical Formulations
+      </p>
+    </div>
+
+  </div>
+</nav>
+
+          
     </header>
   );
 };

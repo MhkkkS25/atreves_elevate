@@ -201,7 +201,7 @@ const Index = () => {
       <section className="section-padding bg-secondary">
         <div className="container-luxury text-center">
           <h2 className="heading-section text-secondary-foreground mb-6">
-            Ready to Partner With Us?
+            Come, Let's Partner!
           </h2>
 
           <p className="text-secondary-foreground/80 text-lg max-w-2xl mx-auto mb-10">
