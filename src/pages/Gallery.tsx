@@ -24,7 +24,7 @@ const galleryData = [
       {
         imageNo: 9,
         title:
-          'Award received by AtreVes Healthcare Pvt. Ltd. @ IKMC 2025',
+          'Award received by AtreVes Healthcare Pvt. Ltd. @ IKMC 2024',
       },
       {
         imageNo: 28,
@@ -46,7 +46,7 @@ const galleryData = [
     images: [
       {
         imageNo: 1,
-        title: 'IKMC 2025',
+        title: 'IKMC 2024',
       },
       {
         imageNo: 2,
@@ -70,7 +70,7 @@ const galleryData = [
       },
       {
         imageNo: 8,
-        title: 'IKMC 2025',
+        title: 'IKMC 2024',
       },
       {
         imageNo: 10,
@@ -102,7 +102,7 @@ const galleryData = [
       },
       {
         imageNo: 27,
-        title: 'IKMC 2025',
+        title: 'IKMC 2024',
       },
     ],
   },

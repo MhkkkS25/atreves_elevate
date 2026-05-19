@@ -76,11 +76,16 @@ const About = () => {
                 specializes in novel formulations designed to improve affordability, 
                 availability, and patient outcomes for global markets.
               </p>
-              <p className="text-body">
+              <p className="text-body mb-6">
                 Founded by <strong className="text-foreground">Dr. Akash Chaurasiya</strong> and 
                 <strong className="text-foreground"> Ms. Kanan Panchal</strong>, AtreVes aims to 
                 strengthen healthcare systems through scientific excellence and innovative 
-                drug delivery solutions. AtreVes Healthcare is the recipient of the 23rd BIG/BIRAC Grant for innovative solution in drug category.
+                drug delivery solutions. 
+                </p>
+
+              <p className="text-body">
+                AtreVes Healthcare is the recipient of the <strong className="text-foreground">23rd BIG/BIRAC Grant </strong> 
+                for innovative solution in drug category.
               </p>
             </div>
           </div>
